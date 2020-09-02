@@ -1,0 +1,125 @@
+@page "/MenuBar"
+@inject HttpClient Http
+
+    <div class="top-row pl-4 navbar navbar-dark">
+        <a class="navbar-brand" href="/"><img src="/imgz/logodescriptive.jpg" height="40" width="200" /></a>
+        <button class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class=navbar-toggler-icon></span>
+        </button>
+    </div>
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    @if (menuList == null)
+    {
+        <p><em>Loading '''</em></p>
+    }
+    else
+    {
+        <ul class="nav flex-column">
+            @foreach (var mn in menuList)
+            {
+                @if (mn.ParentMenuId == 0)
+                {
+                    <li class="nav-item px-3">
+                        <NavLink class="nav-link" href="@mn.PageName" @onclick="()=>GetIsChicked(mn)">
+                            <span class="@mn.IconName" aria-hidden="true"></span>@mn.MenuName
+                        </NavLink>
+                        <ul class="nav flex-column">
+                            @foreach (var mn1 in menuList)
+                            {
+                                if (mn.MenuId == mn1.ParentMenuId)
+                                {
+                                    if (expandSabNav && mn.MenuId == clickedMenu)
+                                    {
+                                        <li class="nav-item px-3">
+                                            <NavLink class="nav-link" href="@mn1.PageName" @onclick="()=>GetIsChicked(mn1)">
+                                                @*<span class="@mn1.IconName" aria-hidden="true"></span>*@@mn1.MenuName
+                                            </NavLink>
+                                        </li>
+                                    }
+
+                                }
+                            }
+
+                        </ul>
+                    </li>
+                }
+            }
+
+        </ul>
+    }
+
+</div>
+
+@code {
+    private MenuItem[] items;
+    private bool collapseNavMenu = true;
+    public IEnumerable<MenuItem> menuList;
+    private bool expandSabNav;
+    private int clickedMenu = 0;
+    private bool hasPageName = true;
+    private int prevClickedMenu = 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        items = await Http.GetFromJsonAsync<MenuItem[]>("data/MenuInfo.json");
+        PopulateMenu();
+    }
+
+    public class MenuItem
+    {
+        public int MenuId { get; set; }
+
+        public int ParentMenuId { get; set; }
+
+        public string PageName { get; set; }
+
+        public string MenuName { get; set; }
+
+        public string IconName { get; set; }
+    }
+
+ 
+
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    private void ToggleNavMenu()
+    {
+        if (hasPageName)
+        {
+            collapseNavMenu = !collapseNavMenu;
+        }
+
+    }
+    public void GetIsChicked(MenuItem mn)
+    {
+        clickedMenu = mn.MenuId;
+        if (prevClickedMenu != clickedMenu)
+        {
+            expandSabNav = false;
+            if (mn.PageName != "" || mn.MenuName == "Home")
+            {
+                hasPageName = true;
+            }
+            else
+            {
+                expandSabNav = !expandSabNav;
+                hasPageName = false;
+            }
+        }
+        else
+        {
+            expandSabNav = !expandSabNav;
+        }
+        prevClickedMenu = clickedMenu;
+    }
+    protected void PopulateMenu()
+    {
+        menuList = items;
+    }
+
+
+
+
+
+
+}

@@ -1,0 +1,231 @@
+[
+
+  {
+    "MenuId": 1,
+    "ParentMenuId": 0,
+    "PageName": "",
+    "MenuName": "Home",
+    "IconName": "oi oi-home",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 2,
+    "ParentMenuId": 0,
+    "PageName": "",
+    "MenuName": "About Us",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 3,
+    "ParentMenuId": 0,
+    "PageName": "",
+    "MenuName": "Economic Data",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 4,
+    "ParentMenuId": 0,
+    "PageName": "",
+    "MenuName": "Product Services",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 5,
+    "ParentMenuId": 0,
+    "PageName": "",
+    "MenuName": "Jobs",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 6,
+    "ParentMenuId": 0,
+    "PageName": "",
+    "MenuName": "Islamic Banking",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 7,
+    "ParentMenuId": 0,
+    "PageName": "",
+    "MenuName": "Digital Banking",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 8,
+    "ParentMenuId": 0,
+    "PageName": "",
+    "MenuName": "Contact Us",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 16,
+    "ParentMenuId": 2,
+    "PageName": "BOD",
+    "MenuName": "Board of Directors",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 17,
+    "ParentMenuId": 2,
+    "PageName": "PresidentMessage",
+    "MenuName": "President Message",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 18,
+    "ParentMenuId": 2,
+    "PageName": "Awards",
+    "MenuName": "ZTBL's Awards",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 19,
+    "ParentMenuId": 2,
+    "PageName": "PhotoGallery",
+    "MenuName": "Photo Gallery",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 15,
+    "ParentMenuId": 2,
+    "PageName": "CreditRating",
+    "MenuName": "Credit Rating",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 14,
+    "ParentMenuId": 2,
+    "PageName": "StaffCollege",
+    "MenuName": "Staff College",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 13,
+    "ParentMenuId": 2,
+    "PageName": "AgriTechnology",
+    "MenuName": "Agri. Technology",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 13,
+    "ParentMenuId": 2,
+    "PageName": "KSSL",
+    "MenuName": "Subsidiary (KSSL)",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+
+  {
+    "MenuId": 31,
+    "ParentMenuId": 3,
+    "PageName": "FinancialStatements",
+    "MenuName": "Financial Statements",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 32,
+    "ParentMenuId": 3,
+    "PageName": "AnnualReports",
+    "MenuName": "Annual Reports",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+
+  {
+    "MenuId": 41,
+    "ParentMenuId": 4,
+    "PageName": "Loan Schemes",
+    "MenuName": "Loan Schemes",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 42,
+    "ParentMenuId": 4,
+    "PageName": "ZTBLBR_Urdu",
+    "MenuName": "Bank Accounts",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 43,
+    "ParentMenuId": 4,
+    "PageName": "ZTBLBR_Urdu",
+    "MenuName": "Bank Accounts",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 42,
+    "ParentMenuId": 4,
+    "PageName": "ZTBLBR_Urdu",
+    "MenuName": "Bank Accounts",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 43,
+    "ParentMenuId": 4,
+    "PageName": "ZTBLBR_Urdu",
+    "MenuName": "Bank Accounts",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 44,
+    "ParentMenuId": 8,
+    "PageName": "ZTBLBranches",
+    "MenuName": "ZTBL Branches",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  },
+  {
+    "MenuId": 45,
+    "ParentMenuId": 8,
+    "PageName": "ZTBLBR_Urdu",
+    "MenuName": "ZTBLBR Urdu",
+    "IconName": "oi oi-cart",
+    "Description": "",
+    "Status": null
+  }
+
+]

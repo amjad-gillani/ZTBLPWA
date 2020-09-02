@@ -1,0 +1,58 @@
+﻿
+@inject HttpClient Http
+
+<div class="card-columns">
+    @foreach (var productZ in ProductList)
+    {
+        <div class="card">
+          
+            <div class="card-body">
+                <h5 class="card-title">@productZ.Title</h5>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">
+
+                    
+                </small>
+            </div>
+        </div>
+    }
+</div>
+
+
+@code {
+    public IEnumerable<ProductC> ProductList;
+    private ProductC[] MyProducts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        MyProducts = await Http.GetFromJsonAsync<ProductC[]>("data/Products.json");
+        PopulateProductList();
+    }
+    //Product selectedProduct;
+    //string selectedProductId;
+
+    //void SelectProduct(string productId)
+    //{
+    //    selectedProductId = productId;
+    //    selectedProduct = ProductList.First(x => x.Id == productId);
+    //   // GetCurrentRating();
+    //}
+    public class ProductC
+    {
+        public string Id { get; set; }
+        public string Category { get; set; }
+
+        
+        public string imgage { get; set; }
+        public string Url { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public int Status { get; set; }
+
+    }
+    protected void PopulateProductList()
+    {
+        ProductList = MyProducts;
+    }
+}

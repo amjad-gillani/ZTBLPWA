@@ -1,0 +1,74 @@
+[
+  {
+    "Id": 1,
+    "Category": "Production",
+    "Image": "imgz/products/KDS-min.png",
+    "Url": "KDS",
+    "Title": "Kissan Dost Scheme (KDS)",
+    "Description": "Kissan Dost Scheme (KDS) has been launched on concessional rate of mark-up for financing crop production loans (seed. fertilizer. pesticides etc.). The financing would be for one season crop i.e. either Rabi or Kharif.",
+    "Status": 1
+  },
+  {
+    "Id": 2,
+    "Category": "Production",
+    "Image": "imgz/products/poultry-ztbl.jpg",
+    "Url": "AZSNonFarm",
+    "Title": "Sada Bahar Scheme (SBS)",
+    "Description": "In order to facilitate the farmers to have easy access towards credit with the facility of one time documentation for three years period withdrawal of loan amount as per their requirements and deposit the same as and when funds are available with them Bank has revived Sada Bahar Scheme.",
+    "Status": 1
+  },
+  {
+    "Id": 3,
+    "Category": "Production",
+    "Image": "imgz/products/g-punjab.jpg",
+    "Url": "g-punjab",
+    "Title": "Govt. of Punjab Mark-up free Agri. E-Credit Scheme",
+    "Description": "In order to support Punjab Government efforts to increase agri. produce as well as to alleviate rural poverty among small and poor farming segment of the society the Bank has decided to launch subject cited scheme across the Punjab Province.",
+    "Status": 1
+  },
+  {
+    "Id": 4,
+    "Category": "Production",
+    "Image": "imgz/products/OilExtraction.jpg",
+    "Url": "OilExtraction",
+    "Title": "Financing of Oil Expeller Unit",
+    "Description": "The chief objective of the scheme is to use seeds of various commodities such as Canola.Rapeseed.Sunflower & Soyabean for economical purposes by extracting edible oil. Oil Expeller Unit/Machine has an important role in extracting oil from raw materials. Oil expeller machine having features such as low price/cost & less complexity could be more attractive among the farmers. It can also alleviate the poverty especially the small farmers through employment generation.",
+    "Status": 1
+  },
+  {
+    "Id": 5,
+    "Category": "Production",
+    "Image": "imgz/products/Floriculture.jpg",
+    "Url": "Floriculture",
+    "Title": "Agri. Financing Scheme for Floriculture & Green Houses",
+    "Description": "In order to promote the floriculture & green houses in Pakistan and to facilitate the rural community to utilize their best potential and skill to earn their livelihood through flower & off-season vegetable cultivation this exclusive scheme has been launched by the Bank. This will also help in reduction of unemployment among rural masses.",
+    "Status": 1
+  },
+  {
+    "Id": 6,
+    "Category": "Production",
+    "Image": "imgz/products/MilkChillers.jpg",
+    "Url": "MilkChillers",
+    "Title": "Financing Scheme for Milk Chilling Unit",
+    "Description": "In order to promote the dairy/livestock sector by streamlining milk collection and its delivery. it is imperative to finance the populace attached with the dairy milk collection business and its distribution. Further in order to get more earning through this sector by establishment of small Milk Chilling Units in the country the Bank has launched the subject scheme for the dairy/livestock farmers across the country.",
+    "Status": 1
+  },
+  {
+    "Id": 7,
+    "Category": "Development",
+    "Image": "imgz/products/Crop-min.png",
+    "Url": "Crop-min",
+    "Title": "Crop Insurance Scheme",
+    "Description": "ZTBL has launched Crop Loan Insurance scheme (CLIS) as per instructions of Government/ SBP. The main features of this scheme are listed hereunder",
+    "Status": 1
+  },
+  {
+    "Id": 8,
+    "Category": "Production",
+    "Image": "imgz/products/SOGHAT-min.png",
+    "Url": "SOGHAT-min",
+    "Title": "Soghat-e-Shireen Scheme for GUR Making",
+    "Description": "Gur is famous being a healthiest sugar in the world owing to its high nutrition value. Being a seasonal & self sustaining business providing gainful employment & returns huge potential for popularizing it as a daily sweetener exist. In line with Banks new initiatives to support Governments efforts for agriculture led economic growth and to alleviate rural poverty the Bank has taken stride to finance Gur making process countrywide.",
+    "Status": 1
+  }
+]

@@ -1,0 +1,84 @@
+@page "/ProductData"
+@inject HttpClient Http
+
+@if (MyProducts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+<div class="row row-cols-1 row-cols-md-3">
+
+
+    @foreach (var productz in MyProducts)
+    {
+        <div class="col mb-4">
+            <div class="card">
+                <img src="@productz.Image" class="card-img-top" alt="@productz.Title">
+                <div class="card-body">
+                    <h5 class="card-title">@productz.Title</h5>
+                    <p class="card-text">@productz.Description</p>
+                    <a href="@productz.Url" class="btn btn-primary">Read More...</a>
+                </div>
+            </div>
+            </div>
+            }
+        </div>
+
+
+        @*<div class="card-columns">
+                @foreach (var productz in MyProducts)
+                {
+                    <div class="card">
+                        <div class="card-img" style="background-image: url('@productz.Image');">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">@productz.Image</h5>MyProducts
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">
+
+
+                            </small>
+                        </div>
+                    </div>
+                }
+            </div>*@
+    }
+    @code {
+public IEnumerable<ProductC> ProductList;
+    private ProductC[] MyProducts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        MyProducts = await Http.GetFromJsonAsync<ProductC[]>("data/ProductsCatalog.json");
+        PopulateProductList();
+    }
+    ProductC selectedProduct;
+    string selectedProductId;
+
+    //void SelectProduct(string productId)
+    //{
+    //    selectedProductId = productId;
+    //    selectedProduct = MyProducts.First(x => x.Id == productId);
+    //   // GetCurrentRating();
+    //}
+    public class ProductC
+    {
+        public int Id { get; set; }
+        public string Category { get; set; }
+        public string Image { get; set; }
+        public string Url { get; set; }
+        public string Title { get; set; }
+         public string Description { get; set; }
+        //public int Status { get; set; }
+
+
+        //  public override string ToString() => JsonSerializer.Serialize<ProductC>(this);
+
+    }
+    protected void PopulateProductList()
+    {
+        ProductList = MyProducts;
+    }
+    }
